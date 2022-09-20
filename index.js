@@ -182,6 +182,100 @@ const finalSettings = {...defaultSettings, ...overrideSettings};*/
 console.log(makeTask({ }));*/
 
 //module 3 task 31
+/*function add(...args) {
+  let total = 0;
+
+  for (let i = 0; i < args.length; i += 1) { 
+    total += args[i];
+  }
+  return total;
+  // Change code above this line
+}
+
+console.log(add(1,2))*/
+
+//module 3 task 32
+
+// Change code below this line
+/*function addOverNum(numberMin,...args) {
+  let total = 0;
+
+  for (const arg of args) { 
+    if (arg>numberMin) { 
+      total += arg;
+    }
+    
+  }
+
+  return total;
+  // Change code above this line
+}
+
+console.log(addOverNum(10, 12, 4, 11, 48, 10, 8));*/
 
 
+//module 3 task 33
+
+// Change code below this line
+/*function findMatches(array, ...args) {
+  const matches = []; // Don't change this line
+ 
+
+  for (const item of array) { 
+    if (args.includes(item)) { 
+      matches.push(item);
+    }
+  }
+
+  // Change code above this line
+  return matches;
+}
+
+console.log(findMatches([4, 89, 17, 36, 2], 8, 17, 89, 27, 2));*/
+
+
+//module 3 task 34
+
+
+/*const bookShelf = {
+  // Change code below this line
+  books: ["The last kingdom", "The guardian of dreams"],
+  getBooks() {
+    return "Returning all books";
+  },
+  addBook(bookName) {
+    return `Adding book ${bookName}`;
+  },
+  removeBook(bookName) { 
+    return `Deleting book ${bookName}`;
+  },
+  updateBook(oldName, newName) { 
+    return `Updating book ${oldName} to ${newName}`
+  }
+  // Change code above this line
+};
+*/
+
+
+//module 3 task 35
+/*const bookShelf = {
+  books: ["The last kingdom", "Haze", "The guardian of dreams"],
+  updateBook(oldName, newName) {
+    // Change code below this line
+    const indexBook = this.books.indexOf(oldName);
+    this.books.splice(indexBook, 1, newName);
+
+
+
+    // Change code above this line
+  },
+};*/
+
+//module 3 task 36
+/*const atTheOldToad = {
+  // Change code below this line
+  potions: [],
+
+  // Change code above this line
+};*/
 

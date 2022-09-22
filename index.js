@@ -345,14 +345,14 @@ const atTheOldToad = {
     return this.potions;
   },
   addPotion(newPotion) {
-    for (const potion of this.potions) { 
-        if (potion.name===newPotion.name) {
+    for (const potion of this.potions) {
+      if (potion.name === newPotion.name) {
         return `Error! Potion ${newPotion.name} is already in your inventory!`;
+      }
     }
-    }  
 
     this.potions.push(newPotion);
-   return this.potions;
+    return this.potions;
   },
 
   
@@ -360,34 +360,32 @@ const atTheOldToad = {
     const { potions } = this;
     const potionIndex = potions.indexOf(potionName);
     
-    for (let i = 0; i < potions.length; i += 1) { 
+    for (let i = 0; i < potions.length; i += 1) {
       const potion = potions[i];
      
-      if (potionName === potion.name) { 
-       potions.splice(i, 1);
+      if (potionName === potion.name) {
+        potions.splice(i, 1);
         return potions;
       }
         
     }
-return `Potion ${potionName} is not in inventory!`;
+    return `Potion ${potionName} is not in inventory!`;
   },
 
 
 
- updatePotionName(oldName, newName) {
-    const potionIndex = this.potions.indexOf(oldName);
-
-    if (potionIndex === -1) {
-      return `Potion ${oldName} is not in inventory!`;
+  updatePotionName(oldName, newName) {
+    for (let i = 0; i < this.potions.length; i += 1) {      
+      if (this.potions[i].name === oldName) {
+        return this.potions[i].name = newName;
+      }
     }
-
-    this.potions.splice(potionIndex, 1, newName);
   },
-  // Change code above this line
+
 };
 
 
 
-console.log(atTheOldToad.updatePotionName('Stone skin', 'Invulnerability potion'));
+console.log(atTheOldToad.updatePotionName('Dragon breath', 'Polymorth'));
 console.log(atTheOldToad.potions);
 

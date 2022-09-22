@@ -345,22 +345,36 @@ const atTheOldToad = {
     return this.potions;
   },
   addPotion(newPotion) {
-    if (this.potions.includes(newPotion)) {
-      return `Error! Potion ${newPotion} is already in your inventory!`;
+    for (const potion of this.potions) { 
+        if (potion.name===newPotion.name) {
+        return `Error! Potion ${newPotion.name} is already in your inventory!`;
     }
+    }  
 
     this.potions.push(newPotion);
+   return this.potions;
   },
+
+  
   removePotion(potionName) {
-    const potionIndex = this.potions.indexOf(potionName);
-
-    if (potionIndex === -1) {
-      return `Potion ${potionName} is not in inventory!`;
+    const { potions } = this;
+    const potionIndex = potions.indexOf(potionName);
+    
+    for (let i = 0; i < potions.length; i += 1) { 
+      const potion = potions[i];
+     
+      if (potionName === potion.name) { 
+       potions.splice(i, 1);
+        return potions;
+      }
+        
     }
-
-    this.potions.splice(potionIndex, 1);
+return `Potion ${potionName} is not in inventory!`;
   },
-  updatePotionName(oldName, newName) {
+
+
+
+ updatePotionName(oldName, newName) {
     const potionIndex = this.potions.indexOf(oldName);
 
     if (potionIndex === -1) {
@@ -371,4 +385,9 @@ const atTheOldToad = {
   },
   // Change code above this line
 };
+
+
+
+console.log(atTheOldToad.updatePotionName('Stone skin', 'Invulnerability potion'));
+console.log(atTheOldToad.potions);
 

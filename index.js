@@ -334,7 +334,7 @@ console.log(atTheOldToad.updatePotionName("Dragon breath", "Polymorth"));*/
 
 //module 3 task 41
 
-const atTheOldToad = {
+/*const atTheOldToad = {
   potions: [
     { name: "Speed potion", price: 460 },
     { name: "Dragon breath", price: 780 },
@@ -387,5 +387,48 @@ const atTheOldToad = {
 
 
 console.log(atTheOldToad.updatePotionName('Dragon breath', 'Polymorth'));
-console.log(atTheOldToad.potions);
+console.log(atTheOldToad.potions);*/
+
+// Налаштування
+/*const myArray = [];
+
+// Змініть код лише під цим рядком
+for(i=1; i<10; i+=2) {
+  myArray.push(i);
+}
+
+console.log(myArray);*/
+
+
+
+
+//module 4 task 1
+
+// function makePizza() {
+//   return "Your pizza is being prepared, please wait.";
+// }
+// // Change code below this line
+
+// const result = makePizza();
+// const pointer = makePizza;
+
+
+//module 4 task 2
+
+/*function deliverPizza(pizzaName) {
+  return `Delivering ${pizzaName} pizza.`;
+}
+
+function makePizza(pizzaName) {
+  return `Pizza ${pizzaName} is being prepared, please wait...`;
+}
+
+// Chande code below this line
+function makeMessage(pizzaName, callback) {
+  return callback(pizzaName);
+}
+
+console.log(makeMessage('Royal Grand', makePizza));*/
+
+//module 4 task 3
 

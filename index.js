@@ -448,3 +448,157 @@ console.log(makeMessage('Royal Grand', makePizza));*/
 
 
 
+//module 4 task 4
+/*const pizzaPalace = {
+  pizzas: ["Ultracheese", "Smoked", "Four meats"],
+  order(pizzaName, onSuccess, onError) {   
+    if (this.pizzas.includes(pizzaName)) {
+      return onSuccess(pizzaName);
+    } else { 
+      return onError(`There is no pizza with a name ${pizzaName} in the assortment.`);
+    }      
+    
+  },
+};
+// Change code above this line
+
+// Callback for onSuccess
+function makePizza(pizzaName) {
+  return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+}
+
+// Callback for onError
+function onOrderError(error) {
+  return `Error! ${error}`;
+}
+
+// Method calls with callbacks
+pizzaPalace.order("Smoked", makePizza, onOrderError);
+pizzaPalace.order("Four meats", makePizza, onOrderError);
+pizzaPalace.order("Big Mike", makePizza, onOrderError);
+pizzaPalace.order("Vienna", makePizza, onOrderError);
+
+
+console.log(pizzaPalace.order("Smoked", makePizza, onOrderError));*/
+
+
+
+//module 4 task 5
+
+// function calculateTotalPrice(orderedItems) {
+//   let totalPrice = 0;
+//   // Change code below this line
+
+//   orderedItems.forEach(function (item) {
+//     totalPrice += item;
+//   });
+
+//  /* for (let i = 0; i < orderedItems.length; i += 1) {
+//     totalPrice += orderedItems[i];
+//   }*/
+
+//   // Change code above this line
+//   return totalPrice;
+// }
+
+
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+
+
+//module 4 task 6
+
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+//   // Change code below this line
+
+//   numbers.forEach(function (number) {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   })
+
+//   // for (let i = 0; i < numbers.length; i += 1) {
+//   //   if (numbers[i] > value) {
+//   //     filteredNumbers.push(numbers[i]);
+//   //   }
+//   // }
+
+//   // Change code above this line
+//   return filteredNumbers;
+// }
+
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+
+
+//module 4 task 7
+// function getCommonElements(firstArray, secondArray) {
+//   const commonElements = [];
+//   // Change code below this line
+//   firstArray.forEach(function (item) {
+//     if (secondArray.includes(item)) {
+//       commonElements.push(item);
+//     }
+//   })
+
+
+//   /*for (let i = 0; i < firstArray.length; i += 1) {
+//     if (secondArray.includes(firstArray[i])) {
+//       commonElements.push(firstArray[i]);
+//     }
+//   }*/
+
+//   return commonElements;
+//   // Change code above this line
+// }
+
+// console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+
+//module 4 task 8
+
+// Change code below this line
+
+//const calculateTotalPrice = (quantity, pricePerItem) => quantity * pricePerItem;
+
+
+//module 4 task 9
+
+// Change code below this line
+//const calculateTotalPrice = (quantity, pricePerItem) => quantity * pricePerItem;
+
+// Change code above this line
+
+//module 4 task 10
+
+// Change code below this line
+/*const calculateTotalPrice = orderedItems => {
+  let totalPrice = 0;
+
+  orderedItems.forEach((item) => {
+    totalPrice += item;
+  });
+
+  return totalPrice;
+}
+// Change code above this line*/
+
+//module 4 task 11
+
+// Change code below this line
+/*const filterArray = (numbers, value) => {
+  const filteredNumbers = [];
+
+  numbers.forEach((number) => {
+    if (number > value) {
+      filteredNumbers.push(number);
+    }
+  });
+
+  // Change code above this line
+  return filteredNumbers;
+}*/
+
+
+
+
+
+

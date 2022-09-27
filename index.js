@@ -597,8 +597,40 @@ console.log(pizzaPalace.order("Smoked", makePizza, onOrderError));*/
   return filteredNumbers;
 }*/
 
+//module 4 task 12
 
+// Change code below this line
+/*const getCommonElements = (firstArray, secondArray) => {
+  const commonElements = [];
 
+  firstArray.forEach((element) => {
+    if (secondArray.includes(element)) {
+      commonElements.push(element);
+    }
+  });
+
+  // Change code above this line
+  return commonElements;
+}*/
+
+//module 4 task 13
+
+/*function changeEven(numbers, value) {
+  // Change code below this line
+
+  let array = [];
+  numbers.forEach(element => { 
+    if (element % 2 === 0) {
+      array.push(element + value)
+    } else { 
+      array.push(element);
+    } 
+  })
+  return array;
+  // Change code above this line
+}
+
+console.log(changeEven([1, 2, 3, 4, 5], 10));*/
 
 
 

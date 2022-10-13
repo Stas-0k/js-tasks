@@ -2889,12 +2889,12 @@ console.log(getUserEmails(users))*/
 //     this.blacklistedEmails = [];
 //   }
 
-//   blacklist(email) { 
+//   blacklist(email) {
 //     this.blacklistedEmails.push(email);
 //   }
 
-//   isBlacklisted(email) { 
-//     if (this.blacklistedEmails.includes(email)) { 
+//   isBlacklisted(email) {
+//     if (this.blacklistedEmails.includes(email)) {
 //       return true
 //     } return false
 //   }
@@ -2913,3 +2913,100 @@ console.log(getUserEmails(users))*/
 // console.log(mango.blacklistedEmails); // ["poly@mail.com"]
 // console.log(mango.isBlacklisted("mango@mail.com")); // false
 // console.log(mango.isBlacklisted("poly@mail.com")); // true
+
+
+// function reverseString(str) {
+//   let arr = [];
+//   arr = str.split("")
+//   str = arr.reverse().join("");
+//   return str;
+// }
+
+
+// console.log(reverseString("hello"))
+
+
+// function factorialize(num) {
+//   let total = 1;
+//   for (let i = num; i > 0; i--) {
+//     total = total * i;
+//   }
+//   return total;
+// }
+
+// console.log(factorialize(5));
+
+
+// function findLongestWordLength(str) {
+
+//   let arr = [];
+//   let long = 0;
+//   arr = str.split(" ")
+//   for (const word of arr) {
+//     if (word.length > long) {
+//       long = word.length;
+//     }
+//   }
+//   return long;
+// }
+
+// console.log(findLongestWordLength("The quick brown fox jumped over the lazy dog"));
+
+
+// function largestOfFour(arr) {
+//   let totalArr = [];
+  
+//   for (const array of arr) { let max = -Infinity;
+//     for (let i = 0; i < array.length; i++) {
+//       if (array[i] > max) {
+//         max = array[i];
+//       }
+     
+//     } totalArr.push(max);
+//   } return totalArr;
+// }
+
+
+// console.log(largestOfFour([[17, 23, 25, 12], [25, 7, 34, 48], [4, -10, 18, 21], [-72, -3, -17, -10]]))
+
+
+// function confirmEnding(str, target) {
+//   if (str.slice(str.length - target.length, str.length) === target) {
+//     return true
+//   }
+//   return false;
+// }
+
+
+// console.log(confirmEnding("He has to give me a new name", "name"));
+
+
+// function repeatStringNumTimes(str, num) {
+//   let accum = "";
+//   if (num > 0) {
+//     for (let i = 0; i < num; i++) {
+//       accum+=str
+//     }
+//   } return accum;
+  
+// }
+
+// console.log(repeatStringNumTimes("abc", 3));
+
+// function truncateString(str, num) {
+//   if (str.length > num) {
+//     return str.slice(0, num) + "...";
+//   } return str;
+// }
+
+
+// console.log(truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length));
+
+
+function findElement(arr, func) {
+  for (const item of arr) {
+    if()
+  }
+}
+
+console.log(findElement([1, 3, 5, 8, 9, 10], function(num) { return num % 2 === 0; }));

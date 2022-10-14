@@ -3003,10 +3003,63 @@ console.log(getUserEmails(users))*/
 // console.log(truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length));
 
 
-function findElement(arr, func) {
-  for (const item of arr) {
-    if()
-  }
-}
+// function findElement(arr, func) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (func(arr[i])) {
+//       return arr[i]
+//     }
+//   } return undefined
+// }
 
-console.log(findElement([1, 3, 5, 8, 9, 10], function(num) { return num % 2 === 0; }));
+// console.log(findElement([1, 3, 5, 7, 9, 11], function(num) { return num % 2 === 0; }));
+
+
+// function booWho(bool) {
+//   if (bool===true||bool===false) {
+//     return true
+//   } return false
+// }
+
+// console.log(booWho(false));
+
+
+// function titleCase(str) {
+//   const newTitle = str.split(" ");
+//   const updatedTitle = [];
+//   for (let st in newTitle) {
+//     updatedTitle[st] = newTitle[st][0].toUpperCase() + newTitle[st].slice(1).toLowerCase();
+//   }
+//   return updatedTitle.join(" ");
+// }
+// console.log(titleCase("I'm a little tea pot"));
+
+
+// function frankenSplice(arr1, arr2, n) {
+//   return [...arr2.slice(0,n),...arr1,...arr2.slice(n)];
+// }
+
+// console.log(frankenSplice([1, 2, 3], [4, 5], 1));//4.1.2.3.5
+
+
+
+// function bouncer(arr) {
+//   let newArray = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i]) newArray.push(arr[i]);
+//   }
+//   return newArray;
+// }
+
+// bouncer([7, "ate", "", false, 9]);
+
+// function getIndexToIns(arr, num) {
+//   arr.sort((a,b) => a-b);
+//   for (const item of arr) { 
+//     if (item >= num) {
+//       return arr.indexOf(item)
+//     }
+//   } return arr.length;
+
+// }
+
+// console.log(getIndexToIns([5, 3, 20, 3], 5));//2
